@@ -2,10 +2,6 @@ const PI = Math.PI;
 const TAU = PI * 2;
 const PI2 = PI / 2;
 
-function powAndDiv(x, p) {
-  return Math.pow(x, p) / p;
-}
-
 module.exports = function sin(x) {
   // optimization: sin(n*PI*x)=0
   if (x % PI == 0) {
